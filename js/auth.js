@@ -2,6 +2,7 @@ const SUPABASE_URL = 'https://zzdqmkirehejmgfiedl.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_3R155kCqgRLudWvvEk1JdQ_OloBH5v5';
 
 const { createClient } = window.supabase;
+const db = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // sign up
 async function signUp(email, password, username) {
