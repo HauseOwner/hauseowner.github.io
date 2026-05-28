@@ -14,9 +14,10 @@
             <span class="nav-brand">
                 >hauseowner://
             </span>
-            <button class="nav-btn active" onclick="show('home', this)">Home</button>
-            <button class="nav-btn" onclick="show('projects', this)">Projects</button>
-            <button class="nav-btn" onclick="show('games', this)">Games</button>
+            <button class="nav-btn active" onclick="showPage('home', this)">Home</button>
+            <button class="nav-btn" onclick="showPage('projects', this)">Projects</button>
+            <button class="nav-btn" onclick="showPage('games', this)">Games</button>
+            <button class="nav-btn" id="auth-btn" onclick="showPage('login', this)">Login</button>
         </nav>
 
         <main>
@@ -93,8 +94,39 @@
                 </div>
             </section>
 
+            <section id="pg-login" class="page">
+                <p class="prompt-line">C:\Users\visitor&gt; auth --login</p>
+                <h2 class="page-title" id="auth-heading">Login</h2>
+                <p class="coming-sub" style="margin-bottom:2rem;">// enter your credentials</p>
+
+                <div id="auth-error" class="auth-error hidden"></div>
+
+                <div class="auth-form">
+                    <div id="signup-username-wrap" class="hidden">
+                        <label class="auth-label">USERNAME</label>
+                        <input class="auth-input" type="text" id="input-username" placeholder="hauseowner" autocomplete="off" />
+                    </div>
+                    <label class="auth-label">EMAIL</label>
+                    <input class="auth-input" type="email" id="input-email" placeholder="your@email.com" autocomplete="off" />
+                    <label class="auth-label">PASSWORD</label>
+                    <input class="auth-input" type="password" id="input-password" placeholder="abcdefg12345678" />
+                    <div class="auth-btn-row">
+                        <button class="dl-btn" id="auth-submit-btn" onclick="handleAuthSubmit()">&#9656; LOGIN</button>
+                        <button class="dl-btn" id="auth-toggle-btn" onclick="toggleAuthMode()">SIGN UP INSTEAD</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pg-account" class="page">
+                <p class="prompt-line">C:\Users\visitor&gt; whoami</p>
+                <h2 class="page-title" id="account-username"></h2>
+                <p class="coming-sub" style="margin-bottom:2rem;">// your profile</p>
+                <button class="dl-btn" onclick="logOut()">&#9656; logout</button>
+            </section>
         </main>
 
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="js/auth.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
