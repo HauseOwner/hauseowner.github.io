@@ -3,39 +3,55 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HauseOwner.com</title>
+        <title>HauseOwner</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <nav>
-            <span class="nav-brand">HauseOwner.com</span>
+            <span class="nav-brand">>hauseowner://</span>
             <button class="nav-btn active" onclick="show('home', this)">Home</button>
             <button class="nav-btn" onclick="show('projects', this)">Projects</button>
             <button class="nav-btn" onclick="show('games', this)">Games</button>
         </nav>
 
-        <section id="page-home" class="page active">
-            <p class="page-label">HauseOwner.com</p>
-            <h1>Welcome to my website.</h1>
-            <div class="divider"></div>
-            <p class="subtitle">More coming soon. Stay tuned.</p>
-        </section>
+        <main>
 
-        <section id="page-projects" class="page">
-            <p class="page-label">Projects</p>
-            <h1>My Projects</h1>
-            <div class="divider"></div>
-            <p class="subtitle">Nothing here yet.</p>
-            <span class="coming-soon">Coming soon</span>
-        </section>
+            <section id="pg-home" class="page active">
+                <p class="prompt-line">C:\Users\visitor&gt; whoami</p>
+                <h1 class="hero-name">Hause<span class="accent">Owner</span><span class="cursor"></span></h1>
+                <p class="hero-tag">Developer; I do a bit of everything.</p>
+                <hr class="divider">
+                <p class="section-label">// about</p>
+                <p class="about-text">
+                    I'm a hobbyist, a developer with a habit of starting projects and actually finishing them.<br>
+                    I tend to tinker with whatever catches my eye at a given moment. Whether that's games, tools, web stuff, you name it really.<br>
+                    If it can be built, I've probably tried to build it.
+                </p>
+                <hr class="divider">
+                <p class="section-label">// contact</p>
+                <div class="contact-row">
+                    <a class="contact-link" href="mailto:requipped0@gmail.com">&#9656; email</a>
+                    <a class="contact-link" href="https://discord.com/users/hauseowner">&#9656; discord</a>
+                    <a class="contact-link" href="https://github.com/hauseowner">&#9656; github</a>
+                </div>
+                <p class="footer-line">&copy; 2026 HauseOwner &mdash; built from scratch, hosted on GitHub Pages.</p>
+            </section>
 
-        <section id="page-games" class="page">
-            <p class="page-label">Games</p>
-            <h1>Games</h1>
-            <div class="divider"></div>
-            <p class="subtitle">Nothing here yet.</p>
-            <span class="coming-soon">Coming soon</span>
-        </section>
+            <section id="pg-projects" class="page">
+                <p class="prompt-line">C:\Users\visitor&gt; ls ./projects</p>
+                <h2 class="page-title">Projects</h2>
+                <p class="coming sub">// nothing here yet, check back soon! &lt;3 </p>
+            </section>
+
+            <section id="pg-games" class="page">
+                <p class="prompt-line">C:\Users\visitor&gt; ls ./games</p>
+                <h2 class="page-title">Games</h2>
+                <p class="coming sub">// nothing here yet, check back soon! &lt;3 </p>
+            </section>
+
+        </main>
 
         <script src="js/main.js"></script>
     </body>
