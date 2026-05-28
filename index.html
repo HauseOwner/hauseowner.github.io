@@ -7,10 +7,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="image/png" href="assets/logo.png" />
     </head>
     <body>
         <nav>
-            <span class="nav-brand">>hauseowner://</span>
+            <span class="nav-brand">
+                <img src="assets/logo.png" alt="HauseOwner logo" class="nav-logo" />
+                >hauseowner://
+            </span>
             <button class="nav-btn active" onclick="show('home', this)">Home</button>
             <button class="nav-btn" onclick="show('projects', this)">Projects</button>
             <button class="nav-btn" onclick="show('games', this)">Games</button>
@@ -74,7 +78,20 @@
             <section id="pg-games" class="page">
                 <p class="prompt-line">C:\Users\visitor&gt; ls ./games</p>
                 <h2 class="page-title">Games</h2>
-                <p class="coming sub">// nothing here yet, check back soon! &lt;3 </p>
+                <p class="coming-sub">// playable in browser</p>
+                <div style="margin-top: 1.5rem;">
+                    <div class="plugin-card">
+                        <div class="plugin-info">
+                            <p class="plugin-name">Pong</p>
+                            <p class="plugin-desc">Classic pong against a CPU. Three difficulty levels. First to 10 wins.</p>
+                            <div class="plugin-meta">
+                                <span class="plugin-badge version">v1.0</span>
+                                <span class="plugin-badge">vs CPU</span>
+                            </div>
+                        </div>
+                        <a class="dl-btn" href="games/pong.html">&#9656; play</a>
+                    </div>
+                </div>
             </section>
 
         </main>
