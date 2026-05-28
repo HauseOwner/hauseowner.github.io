@@ -1,4 +1,4 @@
-const SUPABASE_URL = 'https://zzdqmkirehejmgfiedl.supabase.co';
+const SUPABASE_URL = 'https://zzdqmkiirehejmgfiedl.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6ZHFta2lpcmVoZWptZ2ZpZWRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5OTQyNzEsImV4cCI6MjA5NTU3MDI3MX0.ebAt68XFwzjZ0oeGa2ebqCxabDmZ6wtxZ3eFZrM7yKI';
 
 const { createClient } = window.supabase;
